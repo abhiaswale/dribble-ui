@@ -1,0 +1,11 @@
+.done-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title,
+.description {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+/* CARDS */
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 740px) {
+  .cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

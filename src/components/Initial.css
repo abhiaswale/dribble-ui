@@ -1,0 +1,80 @@
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.form-wrapper,
+.input-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-wrapper {
+  max-width: 1500px;
+  width: 650px;
+  height: auto;
+  padding: 30px;
+}
+
+.form-wrapper > h3 {
+  text-align: center;
+  width: 100%;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.form-wrapper > div {
+  color: #5b6577;
+  margin: 15px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+/* INPUT WRAPPER */
+
+.input-wrapper {
+  width: 100%;
+}
+
+.input-wrapper > label {
+  font-weight: 500;
+  color: #5b6577;
+}
+.input-wrapper > input {
+  width: 100%;
+  border-radius: 5px;
+  border: 0.5px solid #c8d2e4;
+  padding: 12px;
+  margin: 10px 0px;
+}
+
+.individual-ip {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BUTTON STYLES */
+.button-wrapper {
+  width: 100%;
+  margin: 10px 0px;
+}
+.workspace-button {
+  width: 100%;
+  background-color: #664de5;
+  color: white;
+  border-radius: 10px;
+  border: transparent;
+  padding: 20px 10px;
+}
+@media only screen and (max-width: 740px) {
+  .form-wrapper {
+    margin-top: 130px;
+    padding: 0px;
+  }
+}

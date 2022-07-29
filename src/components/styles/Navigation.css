@@ -1,0 +1,11 @@
+.prog {
+  width: 400px;
+  position: relative;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 740px) {
+  .prog {
+    width: 280px;
+  }
+}
