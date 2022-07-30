@@ -1,6 +1,6 @@
 import React from "react";
 import "./Initial.css";
-import "./Final.css";
+import "./styles/Final.css";
 
 import Done from "../assets/done.PNG";
 const Final = () => {

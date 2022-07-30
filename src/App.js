@@ -46,7 +46,14 @@ function App() {
       setButtonColor4("btn-primary");
       setContentType(contentTypes.UsageCompleted);
     }
-  }, [initialCompleted, workCompleted, useageCompleted]);
+  }, [
+    initialCompleted,
+    workCompleted,
+    useageCompleted,
+    contentTypes.InitialCompleted,
+    contentTypes.WorkCompleted,
+    contentTypes.UsageCompleted,
+  ]);
 
   return (
     <div className="Main">
@@ -60,6 +67,7 @@ function App() {
               buttonColor2={buttonColor2}
               buttonColor3={buttonColor3}
               buttonColor4={buttonColor4}
+              setContentType={setContentType}
             />
           </div>
         </div>

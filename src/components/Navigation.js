@@ -8,7 +8,7 @@ const Navigation = ({
   buttonColor4,
 }) => {
   return (
-    <div className="prog" style={{ width: "400px", margin: "10px" }}>
+    <div className="prog">
       <div className="progress" style={{ height: "1px" }}>
         <div
           className="progress-bar"
