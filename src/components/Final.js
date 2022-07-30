@@ -1,5 +1,5 @@
 import React from "react";
-import "./Initial.css";
+import "./styles/Common.css";
 import "./styles/Final.css";
 
 import Done from "../assets/done.PNG";
@@ -8,7 +8,7 @@ const Final = () => {
     <div className="main-wrapper">
       <div className="form-wrapper">
         <div className="done-wrapper">
-          <img src={Done} />
+          <img src={Done} alt="done.jpg" />
         </div>
         <h3 className="title">Congratulations Eren!</h3>
         <div className="description">

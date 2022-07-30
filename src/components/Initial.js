@@ -1,12 +1,21 @@
 import React, { useState } from "react";
-import "./Initial.css";
+import "./styles/Common.css";
 const Initial = ({ setInitialCompleted }) => {
   const [fullName, setFullName] = useState("");
   const [displayName, setDisplayName] = useState("");
+  const [error, setError] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(fullName, displayName);
+    console.log(fullName.length, displayName.length);
+    if (fullName.length <= 0) {
+      setError("Enter valid first name");
+      return;
+    }
+    if (displayName.length <= 0) {
+      setError("Enter valid last name");
+      return;
+    }
     setInitialCompleted(true);
   };
 
@@ -22,6 +31,7 @@ const Initial = ({ setInitialCompleted }) => {
             placeholder="Steve Jobs"
             onChange={(e) => {
               setFullName(e.target.value);
+              setError("");
             }}
             value={fullName}
           />
@@ -36,6 +46,7 @@ const Initial = ({ setInitialCompleted }) => {
             value={displayName}
           />
         </div>
+        <div>{error.length > 0 && <p style={{ color: "red" }}>{error}</p>}</div>
         <div className="button-wrapper">
           <button
             style={{ backgroundColor: "#664de5" }}

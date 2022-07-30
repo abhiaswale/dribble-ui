@@ -1,11 +1,20 @@
 import React, { useState } from "react";
-import "./Initial.css";
+import "./styles/Common.css";
 const Work = ({ setWorkCompleted }) => {
   const [workspaceName, setWorkspaceName] = useState("");
   const [workspaceURL, setWorkspaceURL] = useState("");
+  const [error, setError] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
+    if (workspaceName.length <= 0) {
+      setError("Enter valid workspace name");
+      return;
+    }
+    if (workspaceURL.length <= 0 || !workspaceURL.startsWith("www")) {
+      setError("Enter valid workspace url");
+      return;
+    }
     setWorkCompleted(true);
   };
 
@@ -27,13 +36,15 @@ const Work = ({ setWorkCompleted }) => {
           <label>Workspace URL</label>
           <input
             type="text"
-            placeholder="www.eden.com /example"
+            placeholder="www.eden.com | example"
             onChange={(e) => {
               setWorkspaceURL(e.target.value);
             }}
             value={workspaceURL}
           />
         </div>
+        <div>{error.length > 0 && <p style={{ color: "red" }}>{error}</p>}</div>
+
         <div className="button-wrapper">
           <button
             style={{ backgroundColor: "#664de5" }}

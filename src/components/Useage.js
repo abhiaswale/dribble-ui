@@ -23,15 +23,15 @@ const Useage = ({ setUseageCompleted }) => {
               setSelected(1);
             }}
           >
-            <div class="cardd">
-              <div class="card-body">
+            <div className="cardd">
+              <div className="card-body">
                 <img
                   src={Account}
                   alt="me"
                   className={`${selected === 1 ? "selected-icon" : ""}`}
                 ></img>
-                <p class="card-subtitle">For myself</p>
-                <p class="card-text" id="description">
+                <p className="card-subtitle">For myself</p>
+                <p className="card-text" id="description">
                   Write better, Think more clearly,stay organized
                 </p>
               </div>
@@ -45,15 +45,15 @@ const Useage = ({ setUseageCompleted }) => {
               setSelected(2);
             }}
           >
-            <div class="cardd">
-              <div class="card-body">
+            <div className="cardd">
+              <div className="card-body">
                 <img
                   src={Accounts}
                   alt="others"
                   className={`${selected === 2 ? "selected-icon" : ""}`}
                 ></img>
-                <p class="card-subtitle">With my team</p>
-                <p class="card-text" id="description">
+                <p className="card-subtitle">With my team</p>
+                <p className="card-text" id="description">
                   Wikis, Docs,tasks& projects, all in one place
                 </p>
               </div>

@@ -6,6 +6,7 @@ const Navigation = ({
   buttonColor2,
   buttonColor3,
   buttonColor4,
+  setContentType,
 }) => {
   return (
     <div className="prog">
@@ -24,6 +25,9 @@ const Navigation = ({
         type="button"
         className={`position-absolute top-0 translate-middle btn btn-lg ${buttonColor1} rounded-pill`}
         style={{ width: "3rem", height: "3rem", left: "0%" }}
+        onClick={() => {
+          setContentType(0);
+        }}
       >
         1
       </button>
@@ -31,6 +35,9 @@ const Navigation = ({
         type="button"
         className={`position-absolute top-0 translate-middle btn btn-lg ${buttonColor2} rounded-pill`}
         style={{ width: "3rem", height: "3rem", left: "33%" }}
+        onClick={() => {
+          setContentType(1);
+        }}
       >
         2
       </button>
@@ -38,6 +45,9 @@ const Navigation = ({
         type="button"
         className={`position-absolute top-0 translate-middle btn btn-lg ${buttonColor3} rounded-pill`}
         style={{ width: "3rem", height: "3rem", left: "66%" }}
+        onClick={() => {
+          setContentType(2);
+        }}
       >
         3
       </button>
