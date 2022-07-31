@@ -10,7 +10,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [progress, setProgress] = useState(16);
-  const [buttonColor1, setButtonColor1] = useState("btn-primary");
   const [buttonColor2, setButtonColor2] = useState("btn-light");
   const [buttonColor3, setButtonColor3] = useState("btn-light");
   const [buttonColor4, setButtonColor4] = useState("btn-light");
@@ -63,7 +62,6 @@ function App() {
           <div className="nav-wrapper">
             <Navigation
               progressPercentage={progress}
-              buttonColor1={buttonColor1}
               buttonColor2={buttonColor2}
               buttonColor3={buttonColor3}
               buttonColor4={buttonColor4}

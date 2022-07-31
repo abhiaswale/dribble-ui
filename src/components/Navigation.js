@@ -2,7 +2,6 @@ import React from "react";
 import "./styles/Navigation.css";
 const Navigation = ({
   progressPercentage,
-  buttonColor1,
   buttonColor2,
   buttonColor3,
   buttonColor4,
@@ -23,7 +22,7 @@ const Navigation = ({
       </div>
       <button
         type="button"
-        className={`position-absolute top-0 translate-middle btn btn-lg ${buttonColor1} rounded-pill`}
+        className={`position-absolute top-0 translate-middle btn btn-lg btn-primary rounded-pill`}
         style={{ width: "3rem", height: "3rem", left: "0%" }}
         onClick={() => {
           setContentType(0);

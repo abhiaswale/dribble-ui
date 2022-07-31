@@ -13,7 +13,7 @@ const Initial = ({ setInitialCompleted }) => {
       return;
     }
     if (displayName.length <= 0) {
-      setError("Enter valid last name");
+      setError("Enter valid display name");
       return;
     }
     setInitialCompleted(true);

@@ -11,10 +11,7 @@ const Work = ({ setWorkCompleted }) => {
       setError("Enter valid workspace name");
       return;
     }
-    if (workspaceURL.length <= 0 || !workspaceURL.startsWith("www")) {
-      setError("Enter valid workspace url");
-      return;
-    }
+
     setWorkCompleted(true);
   };
 
@@ -33,7 +30,10 @@ const Work = ({ setWorkCompleted }) => {
             }}
             value={workspaceName}
           />
-          <label>Workspace URL</label>
+          <label>
+            Workspace URL<span id="optional">(optional)</span>
+          </label>
+
           <input
             type="text"
             placeholder="www.eden.com | example"
