@@ -81,30 +81,6 @@ function App() {
         {contentType === contentTypes.UsageCompleted && <Final />}
       </div>
     </div>
-    // <div className="App">
-    //   <div className="wrapper">
-    //     <img src={EdenLogo} alt="eden.jpg" className="logo" />
-    //     <div className="nav-wrapper">
-    //       <Navigation
-    //         progressPercentage={progress}
-    //         buttonColor1={buttonColor1}
-    //         buttonColor2={buttonColor2}
-    //         buttonColor3={buttonColor3}
-    //         buttonColor4={buttonColor4}
-    //       />
-    //     </div>
-    //   </div>
-    //   {contentType === contentTypes.InitialState && (
-    //     <Initial setInitialCompleted={setInitialCompleted} />
-    //   )}
-    //   {contentType === contentTypes.InitialCompleted && (
-    //     <Work setWorkCompleted={setWorkCompleted} />
-    //   )}
-    //   {contentType === contentTypes.WorkCompleted && (
-    //     <Useage setUseageCompleted={setUseageCompleted} />
-    //   )}
-    //   {contentType === contentTypes.UsageCompleted && <Final />}
-    // </div>
   );
 }
 
