@@ -3,14 +3,14 @@ import "./styles/Common.css";
 import "./styles/Final.css";
 
 import Done from "../assets/done.PNG";
-const Final = () => {
+const Final = ({ data }) => {
   return (
     <div className="main-wrapper">
       <div className="form-wrapper">
         <div className="done-wrapper">
           <img src={Done} alt="done.jpg" />
         </div>
-        <h3 className="title">Congratulations Eren!</h3>
+        <h3 className="title">Congratulations {data}!</h3>
         <div className="description">
           You have completed the onboarding, you can start using the Eden!
         </div>

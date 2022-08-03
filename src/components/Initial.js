@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./styles/Common.css";
-const Initial = ({ setInitialCompleted }) => {
+const Initial = ({ setInitialCompleted, getName }) => {
   const [fullName, setFullName] = useState("");
   const [displayName, setDisplayName] = useState("");
   const [error, setError] = useState("");
@@ -16,6 +16,7 @@ const Initial = ({ setInitialCompleted }) => {
       setError("Enter valid display name");
       return;
     }
+    getName(fullName);
     setInitialCompleted(true);
   };
 

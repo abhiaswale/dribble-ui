@@ -20,6 +20,12 @@ function App() {
 
   const [contentType, setContentType] = useState(0);
 
+  const [data, setData] = useState("");
+
+  const getName = (name) => {
+    setData(name);
+  };
+
   const contentTypes = {
     InitialState: 0,
     InitialCompleted: 1,
@@ -70,7 +76,10 @@ function App() {
           </div>
         </div>
         {contentType === contentTypes.InitialState && (
-          <Initial setInitialCompleted={setInitialCompleted} />
+          <Initial
+            setInitialCompleted={setInitialCompleted}
+            getName={getName}
+          />
         )}
         {contentType === contentTypes.InitialCompleted && (
           <Work setWorkCompleted={setWorkCompleted} />
@@ -78,7 +87,7 @@ function App() {
         {contentType === contentTypes.WorkCompleted && (
           <Useage setUseageCompleted={setUseageCompleted} />
         )}
-        {contentType === contentTypes.UsageCompleted && <Final />}
+        {contentType === contentTypes.UsageCompleted && <Final data={data} />}
       </div>
     </div>
   );
