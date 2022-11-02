@@ -64,7 +64,7 @@ function App() {
     <div className="Main">
       <div className="App">
         <div className="wrapper">
-          <img src={EdenLogo} alt="eden.jpg" className="logo" />
+          <img src={EdenLogo} alt="edennn.jpg" className="logo" />
           <div className="nav-wrapper">
             <Navigation
               progressPercentage={progress}
