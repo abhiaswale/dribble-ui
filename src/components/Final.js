@@ -8,7 +8,7 @@ const Final = ({ data }) => {
     <div className="main-wrapper">
       <div className="form-wrapper">
         <div className="done-wrapper">
-          <img src={Done} alt="done.jpg" />
+          <img src={Done} alt="doneeee.jpg" />
         </div>
         <h3 className="title">Congratulations {data}!</h3>
         <div className="description">
